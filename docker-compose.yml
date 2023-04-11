@@ -1,0 +1,37 @@
+version: '3.7'
+
+services:
+
+  backend:
+    container_name: backend
+    image: golang:1.19
+    restart: always
+    volumes:
+      - ./backend/:/go/src
+    ports:
+      - 80:80
+      - 8000:8000
+    env_file:
+      - ./backend/.env
+    tty: true
+    stdin_open: true
+    networks:
+      - networking
+
+  frontend:
+    container_name: frontend
+    image: node:18.8.0-alpine
+    volumes:
+      - ./frontend/:/app
+    ports:
+      - 3000:80
+    tty: true
+    stdin_open: true
+    restart: always
+
+volumes:
+  app:
+    driver: backend
+
+networks:
+  networking:

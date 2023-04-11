@@ -1,0 +1,442 @@
+header.ant-layout-header {
+    background: transparent;
+
+    & .ant-row .ant-menu-horizontal {
+        background: transparent;
+        border: 0;
+
+        & .ant-menu-title-content, & .ant-menu-item a {
+            color: @white;
+            font-weight: 600;
+        }
+    }
+
+    @media @tablet {
+        & .ant-menu {
+            justify-content: flex-end;
+        }
+    }
+
+    @media @phone {
+        & .ant-menu {
+            justify-content: flex-end;
+        }
+    }
+}
+
+div.ant-menu-submenu-popup {
+    & .ant-menu {
+        background: @dark !important;
+    }
+
+    & .ant-menu-item a {
+        color: @white !important;
+    }
+
+    &:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background-color: @dark-default !important;
+        color: @white !important;
+    }
+}
+
+section.default {
+    padding: 5rem;
+
+    @media @tablet {
+        & {
+            padding: 2rem;
+        }
+    }
+
+    @media @phone {
+        & {
+            padding: 2rem;
+        }
+    }
+}
+
+section.banner-home {
+    min-height: 75vh;
+    padding: 9rem 1rem 7rem 1rem;
+    align-items: center;
+    justify-content: center;
+
+    & .ant-row:first-child {
+        margin-bottom: 3rem;
+    }
+
+    & .ant-row:nth-of-type(2) {
+
+        & .ant-col:first-child {
+            margin-bottom: 2.5rem;
+        }
+
+        & .ant-col:last-child {
+            text-align: center;
+        }
+
+        & button.ant-btn {
+            height: 55px;
+            padding: 6.4px 6rem;
+
+            @media @tablet {
+                & {
+                    height: 45px;
+                    padding: 6.4px 4rem;
+                }
+            }
+        
+            @media @phone {
+                & {
+                    height: 45px;
+                    padding: 6.4px 4rem;
+                }
+            }
+        }
+    }
+
+    & img.ant-image-img {
+        border-radius: 50%;
+        width: 320px;
+        height: 320px;
+        filter: grayscale(1);
+    }
+    
+    & h1.ant-typography {
+        text-align: center;
+        font-size: 4.2rem;
+        letter-spacing: 2px;
+
+        @media @tablet {
+            & {
+                font-size: 2.2rem;
+            }
+        }
+    
+        @media @phone {
+            & {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media @small {
+            & {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    & .ant-row.attach {
+        position: relative;
+        height: 0vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        & h4 {
+            margin-left: -5% !important;
+            transform: rotate(-90deg);
+            display: flex;
+            flex-direction: row;
+
+            & span {
+                margin-right: 1rem;
+                letter-spacing: -5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row-reverse;
+
+                & .anticon {
+                    margin: 0 !important;
+                }
+            }
+
+            @media @tablet {
+                & {
+                    margin-left: -20% !important;
+                }
+            }
+        
+            @media @phone {
+                & {
+                    margin-left: -30% !important;
+                }
+            }
+
+            @media @small {
+                & {
+                    margin-left: -40% !important;
+                }
+            }
+        }
+    }
+
+    @media @tablet {
+        & {
+            padding: 3rem 1rem 7rem 1rem;
+        }
+    }
+
+    @media @phone {
+        & {
+            padding: 3rem 1rem 7rem 1rem;
+        }
+    }
+}
+
+section.message-component {
+    padding: 15rem 10rem;
+    text-align: center;
+
+    & h1.ant-typography {
+        font-size: 4.4rem;
+
+        & span {
+            text-decoration: underline;
+        }
+
+        @media @tablet {
+            & {
+                font-size: 2.7rem;
+            }
+        }
+    
+        @media @phone {
+            & {
+                font-size: 2.7rem;
+            }
+        }
+
+        @media @small {
+            & {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    @media @tablet {
+        & {
+            padding: 8rem 2rem;
+        }
+    }
+
+    @media @phone {
+        & {
+            padding: 8rem 2rem;
+        }
+    }
+}
+
+section.boxes-component {
+    margin-bottom: 4.5rem;
+
+    & .ant-col {
+
+        & button.ant-btn {
+            background: @dark-weak !important;
+            border: 2px solid @gray !important;
+            border-radius: 0 !important;
+            width: 100%;
+            height: 43vh;
+
+            & .anticon {
+                font-size: 10rem;
+                color: @white;
+                line-height: 0;
+            }
+        }
+
+        & .ant-divider-horizontal {
+            margin-top: -10rem;
+            height: 10rem;
+            position: absolute;
+            background-color: rgb(9,4,16);
+            border-top: 10px transparent !important;
+            background: linear-gradient(to bottom, rgba(255,0,0,0), #08030F);
+        }
+
+        @media @tablet {
+            & {
+                margin-bottom: 3rem;
+            }
+        }
+    
+        @media @phone {
+            & {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+}
+
+section.interests-component {
+
+    & .ant-row {
+        margin-bottom: 5rem;
+
+        &:nth-of-type(2) .ant-col:last-child {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    & .ant-col h2.ant-typography {
+        font-size: 4.5rem;
+
+        @media @tablet {
+            & {
+                font-size: 3.5rem;
+            }
+        }
+    
+        @media @phone {
+            & {
+                font-size: 3.5rem;
+            }
+        }
+
+        @media @small {
+            & {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    & .ant-col img.ant-image-img {
+        height: 55vh;
+    }
+
+    & .ant-divider-horizontal.ant-divider-with-text {
+        align-items: center;
+        margin-bottom: 3rem !important;
+
+        &::before, &.ant-divider-no-default-orientation-margin-left::after {
+            height: 2px;
+            background-color: @white-weak;
+        }
+    }
+
+    @media @tablet {
+        & .ant-image {
+            width: 100% !important;
+        }
+    }
+
+    @media @phone {
+        & .ant-image {
+            width: 100% !important;
+        }
+    }
+}
+
+footer.ant-layout-footer {
+    background: transparent !important;
+    padding: 5rem 10rem 1rem 10rem;
+
+    & .ant-row {
+
+        & .ant-col {
+            text-align: center;
+        }
+
+        &:first-child {
+            margin-bottom: 8rem;
+
+            & .ant-col:first-child {
+                margin-bottom: 3.5rem;
+            }
+
+            & h2.ant-typography {
+                font-size: 5rem !important;
+
+                @media @tablet {
+                    & {
+                        font-size: 3rem !important;
+                    }
+                }
+            
+                @media @phone {
+                    & {
+                        font-size: 3rem !important;
+                    }
+                }
+
+                @media @small {
+                    & {
+                        font-size: 2.2rem !important;
+                    }
+                }
+            }
+
+            & button.ant-btn {
+                height: 55px;
+                padding: 6.4px 6rem;
+
+                @media @tablet {
+                    & {
+                        height: 45px;
+                        padding: 6.4px 4rem;
+                    }
+                }
+            
+                @media @phone {
+                    & {
+                        height: 45px;
+                        padding: 6.4px 4rem;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            margin-bottom: 8rem;
+
+            & .ant-btn-link {
+                border: 0 !important;
+                color: @white !important;
+                font-size: 1.2rem !important;
+                margin: 0 2rem;
+
+                @media @tablet {
+                    & {
+                        margin: 0 1.5rem;
+                    }
+                }
+            
+                @media @phone {
+                    & {
+                        margin: 0 1rem;
+                    }
+                }
+
+                @media @small {
+                    & {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media @tablet {
+        & {
+            padding: 5rem 3rem 1rem 3rem;
+        }
+    }
+
+    @media @phone {
+        & {
+            padding: 5rem 3rem 1rem 3rem;
+        }
+    }
+}
+
+.copyright {
+    & h4.ant-typography {
+        font-weight: 400 !important;
+        font-size: 1rem !important;
+    }
+}

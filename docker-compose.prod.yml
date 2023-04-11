@@ -1,0 +1,29 @@
+version: '3.7'
+
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    volumes:
+      - /var/log/appgo/:/var/log/appgo
+    ports:
+      - 80:80
+      - 443:443
+      - 8000:8000
+    env_file:
+      - ./backend/.env
+    
+  frontend:
+    tty: false
+    stdin_open: false
+
+  # postgres:
+  #   image: postgres:14
+  #   restart: always
+  #   ports:
+  #     - "5432:5432"
+  #   env_file:
+  #     - ./backend/.env
