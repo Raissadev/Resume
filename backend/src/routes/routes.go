@@ -1,18 +1,11 @@
 package routes
 
 import (
-	controllers "api/src/controllers"
-	. "api/src/utils"
-
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	logger_fiber "github.com/gofiber/fiber/v2/middleware/logger"
 )
-
-var env = Lenv.New()
-var chc controllers.HalfCheckController
-var cml controllers.MailController
 
 type Routes struct {
 	Server *fiber.App
@@ -41,12 +34,6 @@ func New() *Routes {
 	app.RestV1 = app.Server.Group("/api/v1")
 
 	return app
-}
-
-func (app *Routes) NewPublicAPI() *fiber.App {
-	app.RestV1.Get("/", chc.New)
-	app.RestV1.Post("/mail", cml.Send)
-	return app.Server
 }
 
 func (app *Routes) NewWeb() {

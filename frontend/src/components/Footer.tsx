@@ -36,6 +36,7 @@ function Foot(): any
                     <Button href="https://www.linkedin.com/in/raissadev" type="link">Linkedin</Button>
                     <Button href="https://www.instagram.com/raissa_dev" type="link">Instagram</Button>
                     <Button href="https://twitter.com/Raissa_Dev" type="link">Twitter</Button>
+                    <Button href="https://aur.archlinux.org/packages/kenbunshoku-haki" type="link">Kenbunshoku Haki Arch</Button>
                 </Row>
                 <Row align="middle" justify="center" className="copyright">
                     <Title level={4}>

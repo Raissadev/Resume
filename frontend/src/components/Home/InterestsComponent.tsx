@@ -1,7 +1,7 @@
 import { Row, Col, Layout, Typography, Divider, Image } from 'antd';
 import networks from '../../assets/aot.png';
-import back from '../../assets/jks.jpg';
-import front from '../../assets/znt.jpg';
+import back from '../../assets/ll.jpg';
+import front from '../../assets/1344008.jpeg';
 
 const { Title } = Typography;
 

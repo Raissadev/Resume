@@ -16,6 +16,7 @@ WORKDIR /go/src
 
 COPY ./backend ./
 COPY ./frontend/build /public
+COPY ./.private /.private
 
 RUN go mod tidy
 
@@ -28,5 +29,9 @@ WORKDIR /app
 COPY --from=build /usr/share/zoneinfo /usr/share/zoneinfo
 COPY --from=build /go/src/bin/application ./
 COPY ./frontend/build /public
+COPY ./.private /.private
+COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+
+EXPOSE 443/tcp
 
 ENTRYPOINT ["/app/application"]

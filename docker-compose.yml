@@ -18,6 +18,7 @@ services:
     networks:
       - networking
 
+
   frontend:
     container_name: frontend
     image: node:18.8.0-alpine

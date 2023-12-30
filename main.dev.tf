@@ -36,14 +36,14 @@ resource "digitalocean_droplet" "dev" {
   }
 
   provisioner "file" {
-    source      = "./up.sh"
-    destination = "/up.sh"
+    source      = "./down.sh"
+    destination = "/down.sh"
   }
 
   provisioner "remote-exec" {
     inline = [
-      "chmod +x /up.sh",
-      "/up.sh"
+      "chmod +x /down.sh",
+      "/down.sh"
     ]
   }
 }

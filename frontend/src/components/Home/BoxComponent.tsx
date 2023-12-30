@@ -11,7 +11,7 @@ function BoxComponent(): any
                         span={6} xxl={6} xl={6} lg={6} md={24} sm={24} xs={24}
                     >
                         <Popover
-                            content="Linux user, I've used distros like: Linux mint, Ubuntu and currently Kali Linux and Manjaro"
+                            content="Linux user, I've used distros like: Linux mint (only for testing on virtual machines rsrs), Ubuntu and currently Kali Linux and Manjaro"
                             title="Operational system"
                             trigger="hover"
                         >
@@ -42,10 +42,8 @@ function BoxComponent(): any
                         span={6} xxl={6} xl={6} lg={6} md={24} sm={24} xs={24}
                     >
                         <Popover
-                            content="I find it easy to learn, in part because I'm constantly studying.
-                                However, I do not have very good communication, as I am a shy person. 🙂
-                            "
-                            title="Soft Skills"
+                            content="I like calculus, rubik's cubes and anime. 🙂"
+                            title="Brief introduction about me"
                             trigger="hover"
                         >
                             <Button>

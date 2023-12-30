@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Row, Col, Layout, Image, Typography, Button } from 'antd';
 import { RightOutlined, CaretLeftFilled } from '@ant-design/icons';
 import { FormProperty, FormPattern } from "../../@types/form-modal";
-import myImage from '../../assets/my.jpg';
+import myImage from '../../assets/y.jpg';
 import Modall from "../../components/Modal";
 
 const { Title } = Typography;
