@@ -49,10 +49,10 @@ func main() {
 	routes.Mail()
 	routes.NewWeb()
 
-	routes.Server.Listen(os.Getenv("SERVER_PORT"))
+	// routes.Server.Listen(os.Getenv("SERVER_PORT"))
 
-	// if err := routes.Server.ListenTLS(":443", "/.private/fullchain.pem", "/.private/privkey.pem"); err != nil {
-	// 	fmt.Println(err)
-	// 	os.Exit(1)
-	// }
+	if err := routes.Server.ListenTLS(":443", "/.private/fullchain.pem", "/.private/privkey.pem"); err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }

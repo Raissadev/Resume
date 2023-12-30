@@ -37,12 +37,12 @@ type DataSource struct {
 func (ds *DataSource) New() *DataSource {
 	return &DataSource{
 		Driver:   "postgres",
-		Host:     os.Getenv("DB_HOST"),
-		Port:     os.Getenv("DB_PORT"),
-		Pass:     os.Getenv("DB_PASSWORD"),
-		User:     os.Getenv("DB_USER"),
-		Database: os.Getenv("DB_NAME"),
-		SSLmode:  os.Getenv("DB_SSL_MODE"),
+		Host:     os.Getenv("POSTGRES_HOST"),
+		Port:     os.Getenv("POSTGRES_PORT"),
+		Pass:     os.Getenv("POSTGRES_PASSWORD"),
+		User:     os.Getenv("POSTGRES_USER"),
+		Database: os.Getenv("POSTGRES_DB_NAME"),
+		SSLmode:  os.Getenv("POSTGRES_SSL_MODE"),
 	}
 }
 

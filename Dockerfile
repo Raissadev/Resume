@@ -31,6 +31,7 @@ COPY --from=build /go/src/bin/application ./
 COPY ./frontend/build /public
 COPY ./.private /.private
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY ./backend/.env /app/.env
 
 EXPOSE 443/tcp
 
