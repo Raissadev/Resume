@@ -9,7 +9,6 @@ services:
     volumes:
       - ./backend/:/go/src
     ports:
-      - 80:80
       - 8000:8000
     env_file:
       - ./backend/.env

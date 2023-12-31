@@ -17,7 +17,7 @@ function Foot(): any
                 <Row align="middle" justify="center">
                     <Col span={24}>
                         <Title level={2}>
-                            Want to create <br/> amazing stuff
+                            Would you like to <br/> discuss something?
                         </Title>
                     </Col>
                     <Col span={24}>
